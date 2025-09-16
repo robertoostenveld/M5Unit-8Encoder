@@ -26,8 +26,8 @@ class UNIT_8ENCODER {
 
    public:
     bool begin(uint8_t addr = ENCODER_ADDR);
-    bool begin(uint8_t addr = ENCODER_ADDR, uint8_t sda = 21, 
-               uint8_t scl = 22, uint32_t speed = 100000L);
+    bool begin(uint8_t addr = ENCODER_ADDR, uint8_t sda = 21, uint8_t scl = 22,
+               uint32_t speed = 100000L);
     bool begin(TwoWire* wire = &Wire, uint8_t addr = ENCODER_ADDR,
                uint8_t sda = 21, uint8_t scl = 22, uint32_t speed = 100000L);
     int32_t getEncoderValue(uint8_t index);
